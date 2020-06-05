@@ -1,0 +1,36 @@
+body {
+    background-color: lightgray;
+    font-family: 'Thasadith', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+#navigation {
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px;
+}
+
+#bakgrund {
+    margin-bottom: 50px;
+}
+
+#article {
+    height: 350px;
+}
+
+#lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+#knapp {
+    margin-top: 10px;
+    width:100%;
+}

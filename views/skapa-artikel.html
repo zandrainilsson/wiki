@@ -1,0 +1,18 @@
+% include("_header.html")
+
+            <h2>Skapa artikel</h2>
+
+            <form action="/update" method="POST">
+                <input type="hidden" value="" name="id" id="id">
+                <div class="form-group">
+                    <label for="title">Titel:</label>
+                    <input type="text" class="form-control" id="title" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="article">Artikel:</label>
+                    <textarea class="form-control" id="article" name="article"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Spara</button>
+            </form>
+            
+% include("_footer.html")

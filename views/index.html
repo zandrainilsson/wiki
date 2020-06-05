@@ -1,0 +1,21 @@
+% include("_header.html")
+
+            <div class="row-1">
+                <div class="col">
+                    <h1>Alla artiklar</h1>
+                    <ul class="list-group">
+                    % for i in articles:
+                        <form action="/delete" method="POST">
+                            <li id="lista" class="list-group-item list-group-item-action">
+                                <input type="hidden" name="titel" value="{{ i['title'] }}">
+                                <a href="/wiki/{{ i['title'] }}" name="titel" value="{{ i['title'] }}">{{ i["title"] }}</a>
+                                <input type="submit" id="x" name="delete" value="x" class="btn btn-secondary">
+                            </li>
+                        </form>
+                    % end
+                    </ul>
+                    <a id="knapp" class="btn btn-secondary" href="/edit/skapa-artikel" role="button">Skapa ny artikel</a>
+                </div>
+            </div>
+            
+% include("_footer.html")
